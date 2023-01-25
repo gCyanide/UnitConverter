@@ -297,20 +297,60 @@ namespace UnitConverter
             String unitToName = To.GetItemText(To.SelectedItem).Replace(" ", "").Split('(')[0];
 
             Unit unitFrom = units.AllUnits
-                .Where(unit => unit.Name.Contains(unitFromName))
+                .Where(unit => unit.Name == unitFromName)
                 .FirstOrDefault();
 
             String AllValues = Input + " " + unitFromName + ":\r\n";
 
-            for (int i = 0; i < To.Items.Count; i++)
+            Double result = Double.NaN;
+            if (unitFrom.Type == "Temperature")
             {
-                if (RoundUpTSMI.Checked)
+                if (unitFrom.Name == "Celsius")
                 {
-                    AllValues += "• to " + To.Items[i] + ": " + (Input * unitFrom.ConvertTo[i].ConvertValue).ToString("N3") + "\r\n";
+                    result = 1.0;
+                    AllValues += "• to Celsius: " + result + "\r\n";
+                    result = Input * (9.0 / 5.0) + 32.0;
+                    AllValues += "• to Fahrenheit: " + result + "\r\n";
+                    result = Input + 273.15;
+                    AllValues += "• to Kelvin: " + result + "\r\n";
                 }
-                else
+                else if (unitFrom.Name == "Fahrenheit")
                 {
-                    AllValues += "• to " + To.Items[i] + ": " + (Input * unitFrom.ConvertTo[i].ConvertValue).ToString() + "\r\n";
+                    result = (Input - 32.0) * (5.0 / 9.0);
+                    AllValues += "• to Celsius: " + result + "\r\n";
+                    result = 1.0;
+                    AllValues += "• to Fahrenheit: " + result + "\r\n";
+                    result = (Input - 32.0) * (5.0 / 9.0) + 273.15;
+                    AllValues += "• to Kelvin: " + result + "\r\n";
+                }
+                else if (unitFrom.Name == "Kelvin")
+                {
+                    result = Input - 273.15;
+                    AllValues += "• to Celsius: " + result + "\r\n";
+                    result = (Input - 273.15) * (9.0 / 5.0) + 32;
+                    AllValues += "• to Fahrenheit: " + result + "\r\n";
+                    result = 1.0;
+                    AllValues += "• to Kelvin: " + result + "\r\n";
+                }
+            }
+            else
+            {
+                for (int i = 0; i < To.Items.Count; i++)
+                {
+                    result = Double.NaN;
+                    if (unitFrom.Type != "Temperature")
+                    {
+                        result = unitFrom.ConvertTo[i].ConvertValue * Input;
+                    }
+
+                    if (RoundUpTSMI.Checked)
+                    {
+                        AllValues += "• to " + To.Items[i] + ": " + (result).ToString("N3") + "\r\n";
+                    }
+                    else
+                    {
+                        AllValues += "• to " + To.Items[i] + ": " + (result).ToString() + "\r\n";
+                    }
                 }
             }
 
@@ -405,20 +445,74 @@ namespace UnitConverter
                 String unitToName = To.GetItemText(To.SelectedItem).Replace(" ", "").Split('(')[0];
 
                 Unit unitFrom = units.AllUnits
-                    .Where(unit => unit.Name.Contains(unitFromName))
+                    .Where(unit => unit.Name == unitFromName)
                     .FirstOrDefault();
 
                 Double convertValue = Convert.ToDouble(unitFrom.ConvertTo
-                    .Where(value => value.Name.Contains(unitToName))
+                    .Where(value => value.Name == unitToName)
                     .FirstOrDefault().ConvertValue);
 
-                if (RoundUpTSMI.Checked)
-                {
-                    MtbTo.Text = (convertValue * Input).ToString("N3");
+                Double result = Double.NaN;
+                if (unitFrom.Type != "Temperature")
+                { 
+                    result = convertValue * Input;
                 }
                 else
                 {
-                    MtbTo.Text = (convertValue * Input).ToString();
+                    if (unitFrom.Name == "Celsius")
+                    {
+                        if (unitToName == "Fahrenheit")
+                        {
+                            result = Input * (9.0 / 5.0) + 32.0;
+                        }
+                        else if (unitToName == "Kelvin")
+                        {
+                            result = Input + 273.15;
+                        }
+                        else
+                        {
+                            result = 1.0;
+                        }
+                    }
+                    else if (unitFrom.Name == "Fahrenheit")
+                    {
+                        if (unitToName == "Celsius")
+                        {
+                            result = (Input - 32.0) * (5.0 / 9.0);
+                        }
+                        else if (unitToName == "Kelvin")
+                        {
+                            result = (Input - 32.0) * (5.0 / 9.0) + 273.15;
+                        }
+                        else
+                        {
+                            result = 1.0;
+                        }
+                    }
+                    else if (unitFrom.Name == "Kelvin")
+                    {
+                        if (unitToName == "Celsius")
+                        {
+                            result = Input - 273.15;
+                        }
+                        else if (unitToName == "Fahrenheit")
+                        {
+                            result = (Input - 273.15) * (9.0 / 5.0) + 32;
+                        }
+                        else
+                        {
+                            result = 1.0;
+                        }
+                    }
+                }
+
+                if (RoundUpTSMI.Checked)
+                {
+                    MtbTo.Text = (result).ToString("N3");
+                }
+                else
+                {
+                    MtbTo.Text = (result).ToString();
                 }
             }
             catch (Exception ex)
@@ -529,17 +623,74 @@ namespace UnitConverter
                                     .Where(unit => unit.Checked).FirstOrDefault().Name
                                     .Replace("WidgetTo", "").Replace("TSMI", "");
 
-                                Unit unitFrom = units.AllUnits.Where(exact => exact.Name.Contains(nameFrom)).FirstOrDefault();
-                                Value valueTo = unitFrom.ConvertTo.Where(val => val.Name.Contains(nameTo)).FirstOrDefault();
+                                Unit unitFrom = units.AllUnits.Where(exact => exact.Name == nameFrom).FirstOrDefault();
+                                Value valueTo = unitFrom.ConvertTo.Where(val => val.Name == nameTo).FirstOrDefault();
                                 
                                 input = Convert.ToDouble(selection.GetText(-1));
-                                if (RoundUpTSMI.Checked)
+
+                                Double result = Double.NaN;
+
+                                if (unitFrom.Type != "Temperature")
                                 {
-                                    SendKeys.SendWait((input * valueTo.ConvertValue).ToString("N3"));
+                                    result = input * valueTo.ConvertValue;
                                 }
                                 else
                                 {
-                                    SendKeys.SendWait((input * valueTo.ConvertValue).ToString());
+                                    result = Double.NaN;
+                                    if (unitFrom.Name == "Celsius")
+                                    {
+                                        if (valueTo.Name == "Fahrenheit")
+                                        {
+                                            result = input * (9.0 / 5.0) + 32.0;
+                                        }
+                                        else if (valueTo.Name == "Kelvin")
+                                        {
+                                            result = input + 273.15;
+                                        }
+                                        else
+                                        {
+                                            result = 1.0;
+                                        }
+                                    }
+                                    else if (unitFrom.Name == "Fahrenheit")
+                                    {
+                                        if (valueTo.Name == "Celsius")
+                                        {
+                                            result = (input - 32.0) * (5.0 / 9.0);
+                                        }
+                                        else if (valueTo.Name == "Kelvin")
+                                        {
+                                            result = (input - 32.0) * (5.0 / 9.0) + 273.15;
+                                        }
+                                        else
+                                        {
+                                            result = 1.0;
+                                        }
+                                    }
+                                    else if (unitFrom.Name == "Kelvin")
+                                    {
+                                        if (valueTo.Name == "Celsius")
+                                        {
+                                            result = input - 273.15;
+                                        }
+                                        else if (valueTo.Name == "Fahrenheit")
+                                        {
+                                            result = (input - 273.15) * (9.0 / 5.0) + 32;
+                                        }
+                                        else
+                                        {
+                                            result = 1.0;
+                                        }
+                                    }
+                                }
+
+                                if (RoundUpTSMI.Checked)
+                                {
+                                    SendKeys.SendWait(result.ToString("N3"));
+                                }
+                                else
+                                {
+                                    SendKeys.SendWait(result.ToString());
                                 }
                             }
                             catch (NullReferenceException ex)
