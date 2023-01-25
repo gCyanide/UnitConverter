@@ -38,7 +38,7 @@ namespace UnitConverter
         {
             var psi = new ProcessStartInfo
             {
-                FileName = "https://github.com/gCyanide",
+                FileName = "https://github.com/gCyanide/UnitConverter",
                 UseShellExecute = true
             };
             Process.Start(psi);

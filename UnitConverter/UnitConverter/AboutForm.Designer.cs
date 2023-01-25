@@ -105,10 +105,10 @@
             this.GitLinkLabel.AutoSize = true;
             this.GitLinkLabel.Location = new System.Drawing.Point(117, 176);
             this.GitLinkLabel.Name = "GitLinkLabel";
-            this.GitLinkLabel.Size = new System.Drawing.Size(321, 32);
+            this.GitLinkLabel.Size = new System.Drawing.Size(196, 32);
             this.GitLinkLabel.TabIndex = 14;
             this.GitLinkLabel.TabStop = true;
-            this.GitLinkLabel.Text = "https://github.com/gCyanide";
+            this.GitLinkLabel.Text = "UnitConverter.git";
             this.GitLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitLinkLabel_LinkClicked);
             // 
             // ContactLabel
