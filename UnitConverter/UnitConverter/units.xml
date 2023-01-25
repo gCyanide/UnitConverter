@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Units>
+	<!-- ===================== AREA ===================== -->
+	<Unit>
+		<Name>SquareMeter</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">1</Value>
+			<Value Name = "SquareKilometer">0.000001</Value>
+			<Value Name = "SquareCentimeter">10000</Value>
+			<Value Name = "SquareMillimeter">1000000</Value>
+			<Value Name = "SquareMicrometer">1000000000000</Value>
+			<Value Name = "Hectare">0.0001</Value>
+			<Value Name = "SquareMile">0.00000038610215855</Value>
+			<Value Name = "SquareYard">1.19599</Value>
+			<Value Name = "SquareFoot">10.7639</Value>
+			<Value Name = "SquareInch">1550</Value>
+			<Value Name = "Acre">0.000247105</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareKilometer</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">1000000</Value>
+			<Value Name = "SquareKilometer">1</Value>
+			<Value Name = "SquareCentimeter">10000000000</Value>
+			<Value Name = "SquareMillimeter">1000000000000</Value>
+			<Value Name = "SquareMicrometer">1000000000000000000</Value>
+			<Value Name = "Hectare">100</Value>
+			<Value Name = "SquareMile">0.3861</Value>
+			<Value Name = "SquareYard">1195990.0463</Value>
+			<Value Name = "SquareFoot">10763910.4169</Value>
+			<Value Name = "SquareInch">1550003100.0365</Value>
+			<Value Name = "Acre">247.1054</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareCentimeter</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.0001</Value>
+			<Value Name = "SquareKilometer">0.0000000001</Value>
+			<Value Name = "SquareCentimeter">1</Value>
+			<Value Name = "SquareMillimeter">100</Value>
+			<Value Name = "SquareMicrometer">100000000</Value>
+			<Value Name = "Hectare">0.00000001</Value>
+			<Value Name = "SquareMile">0.000000000038610215855</Value>
+			<Value Name = "SquareYard">1.19599</Value>
+			<Value Name = "SquareFoot">0.001076391041692032</Value>
+			<Value Name = "SquareInch">0.155</Value>
+			<Value Name = "Acre">0.0000000247105381472</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareMillimeter</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.000001</Value>
+			<Value Name = "SquareKilometer">0.000000000001</Value>
+			<Value Name = "SquareCentimeter">0.01</Value>
+			<Value Name = "SquareMillimeter">1</Value>
+			<Value Name = "SquareMicrometer">1000000</Value>
+			<Value Name = "Hectare">0.0000000001</Value>
+			<Value Name = "SquareMile">0.00000000000038610215855</Value>
+			<Value Name = "SquareYard">0.00000119599004632448</Value>
+			<Value Name = "SquareFoot">0.00001076391041692032</Value>
+			<Value Name = "SquareInch">0.0015500031000365263</Value>
+			<Value Name = "Acre">0.000000000247105381472</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareMicrometer</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.000000000001</Value>
+			<Value Name = "SquareKilometer">0.000000000000000001</Value>
+			<Value Name = "SquareCentimeter">0.00000001</Value>
+			<Value Name = "SquareMillimeter">0.000001</Value>
+			<Value Name = "SquareMicrometer">1</Value>
+			<Value Name = "Hectare">0.0000000000000001</Value>
+			<Value Name = "SquareMile">0.00000000000000000038610215855</Value>
+			<Value Name = "SquareYard">0.0000000000011959900463244802</Value>
+			<Value Name = "SquareFoot">0.000000000010763910416920321</Value>
+			<Value Name = "SquareInch">0.0000000015500031000365262</Value>
+			<Value Name = "Acre">0.000000000000000247105381472</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Hectare</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">10000</Value>
+			<Value Name = "SquareKilometer">0.01</Value>
+			<Value Name = "SquareCentimeter">100000000</Value>
+			<Value Name = "SquareMillimeter">10000000000</Value>
+			<Value Name = "SquareMicrometer">10000000000000000</Value>
+			<Value Name = "Hectare">1</Value>
+			<Value Name = "SquareMile">0.0038610215855</Value>
+			<Value Name = "SquareYard">11959.9005</Value>
+			<Value Name = "SquareFoot">107639.1042</Value>
+			<Value Name = "SquareInch">15500031</Value>
+			<Value Name = "Acre">2.4711</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareMile</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">2589988.1103</Value>
+			<Value Name = "SquareKilometer">2.59</Value>
+			<Value Name = "SquareCentimeter">25899881102.8533</Value>
+			<Value Name = "SquareMillimeter">2589988110285.326</Value>
+			<Value Name = "SquareMicrometer">2589988110285326300</Value>
+			<Value Name = "Hectare">259</Value>
+			<Value Name = "SquareMile">1</Value>
+			<Value Name = "SquareYard">3097600</Value>
+			<Value Name = "SquareFoot">27878400</Value>
+			<Value Name = "SquareInch">4014489600</Value>
+			<Value Name = "Acre">640</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareYard</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.8361</Value>
+			<Value Name = "SquareKilometer">0.000000836127359983641</Value>
+			<Value Name = "SquareCentimeter">8361.2736</Value>
+			<Value Name = "SquareMillimeter">836127.36</Value>
+			<Value Name = "SquareMicrometer">836127359983.641</Value>
+			<Value Name = "Hectare">0.0001</Value>
+			<Value Name = "SquareMile">0.0000003228305785123967</Value>
+			<Value Name = "SquareYard">1</Value>
+			<Value Name = "SquareFoot">9</Value>
+			<Value Name = "SquareInch">1296</Value>
+			<Value Name = "Acre">0.00020661157024793388</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareFoot</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.0929</Value>
+			<Value Name = "SquareKilometer">0.00000009290303999818233</Value>
+			<Value Name = "SquareCentimeter">929.0304</Value>
+			<Value Name = "SquareMillimeter">92903.04</Value>
+			<Value Name = "SquareMicrometer">92903039998.1823</Value>
+			<Value Name = "Hectare">0.000009290303999818233</Value>
+			<Value Name = "SquareMile">0.00000003587006427915519</Value>
+			<Value Name = "SquareYard">0.11111111111111111</Value>
+			<Value Name = "SquareFoot">1</Value>
+			<Value Name = "SquareInch">144</Value>
+			<Value Name = "Acre">0.00002295684113865932</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>SquareInch</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">0.0006451599999873773</Value>
+			<Value Name = "SquareKilometer">0.0000000006451599999873773</Value>
+			<Value Name = "SquareCentimeter">6.4516</Value>
+			<Value Name = "SquareMillimeter">645.16</Value>
+			<Value Name = "SquareMicrometer">645159999.9874</Value>
+			<Value Name = "Hectare">0.00000006451599999873773</Value>
+			<Value Name = "SquareMile">0.00000000024909766860524435</Value>
+			<Value Name = "SquareYard">0.0007716049382716049</Value>
+			<Value Name = "SquareFoot">0.006944444444444444</Value>
+			<Value Name = "SquareInch">1</Value>
+			<Value Name = "Acre">0.00000015942250790735638</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Acre</Name>
+		<Type>Area</Type>
+		<ConvertTo>
+			<Value Name = "SquareMeter">4046.8564</Value>
+			<Value Name = "SquareKilometer">0.004046856422320822</Value>
+			<Value Name = "SquareCentimeter">40468564.2232</Value>
+			<Value Name = "SquareMillimeter">4046856422.3208</Value>
+			<Value Name = "SquareMicrometer">4046856422320823</Value>
+			<Value Name = "Hectare">0.4047</Value>
+			<Value Name = "SquareMile">0.0015625</Value>
+			<Value Name = "SquareYard">4840</Value>
+			<Value Name = "SquareFoot">43560</Value>
+			<Value Name = "SquareInch">6272640</Value>
+			<Value Name = "Acre">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+	
+	<!-- ==================== LENGTH ==================== -->
+	<Unit>
+		<Name>Meter</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">1</Value>
+			<Value Name = "Kilometer">0.001</Value>
+			<Value Name = "Centimeter">100</Value>
+			<Value Name = "Millimeter">1000</Value>
+			<Value Name = "Micrometer">1000000</Value>
+			<Value Name = "Nanometer">1000000000</Value>
+			<Value Name = "Mile">0.0006213689</Value>
+			<Value Name = "Yard">1.0936132983</Value>
+			<Value Name = "Foot">3.280839895</Value>
+			<Value Name = "Inch">39.37007874</Value>
+			<Value Name = "LightYear">0.0000000000000001057008707</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Kilometer</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">1000</Value>
+			<Value Name = "Kilometer">1</Value>
+			<Value Name = "Centimeter">100000</Value>
+			<Value Name = "Millimeter">1000000</Value>
+			<Value Name = "Micrometer">1000000000</Value>
+			<Value Name = "Nanometer">1000000000000</Value>
+			<Value Name = "Mile">0.6213688756</Value>
+			<Value Name = "Yard">1093.6132983</Value>
+			<Value Name = "Foot">3280.839895</Value>
+			<Value Name = "Inch">39370.07874</Value>
+			<Value Name = "LightYear">0.000000003937007874</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Centimeter</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.01</Value>
+			<Value Name = "Kilometer">0.00001</Value>
+			<Value Name = "Centimeter">1</Value>
+			<Value Name = "Millimeter">10</Value>
+			<Value Name = "Micrometer">10000</Value>
+			<Value Name = "Nanometer">10000000</Value>
+			<Value Name = "Mile">0.0000062137</Value>
+			<Value Name = "Yard">0.010936133</Value>
+			<Value Name = "Foot">0.032808399</Value>
+			<Value Name = "Inch">0.3937007874</Value>
+			<Value Name = "LightYear">0.000000000000000001057008707</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Millimeter</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.001</Value>
+			<Value Name = "Kilometer">0.000001</Value>
+			<Value Name = "Centimeter">0.1</Value>
+			<Value Name = "Millimeter">1</Value>
+			<Value Name = "Micrometer">1000</Value>
+			<Value Name = "Nanometer">1000000</Value>
+			<Value Name = "Mile">0.0000006213688756</Value>
+			<Value Name = "Yard">0.0010936133</Value>
+			<Value Name = "Foot">0.0032808399</Value>
+			<Value Name = "Inch">0.0393700787</Value>
+			<Value Name = "LightYear">0.0000000000000000001057008707</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Micrometer</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.000001</Value>
+			<Value Name = "Kilometer">0.000000001</Value>
+			<Value Name = "Centimeter">0.0001</Value>
+			<Value Name = "Millimeter">0.001</Value>
+			<Value Name = "Micrometer">1</Value>
+			<Value Name = "Nanometer">1000</Value>
+			<Value Name = "Mile">0.0000000006213688756</Value>
+			<Value Name = "Yard">0.0000010936</Value>
+			<Value Name = "Foot">0.0000032808</Value>
+			<Value Name = "Inch">0.0000393701</Value>
+			<Value Name = "LightYear">0.0000000000000000000001057008707</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Nanometer</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.000000001</Value>
+			<Value Name = "Kilometer">0.000000000001</Value>
+			<Value Name = "Centimeter">0.0000001</Value>
+			<Value Name = "Millimeter">0.000001</Value>
+			<Value Name = "Micrometer">0.001</Value>
+			<Value Name = "Nanometer">1</Value>
+			<Value Name = "Mile">0.0000000000006213688756</Value>
+			<Value Name = "Yard">0.00000000109361329</Value>
+			<Value Name = "Foot">0.000000003280839895</Value>
+			<Value Name = "Inch">0.00000003937007874</Value>
+			<Value Name = "LightYear">0.0000000000000000000000001057008707</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Mile</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">1609.35</Value>
+			<Value Name = "Kilometer">1.60935</Value>
+			<Value Name = "Centimeter">160935</Value>
+			<Value Name = "Millimeter">1609350</Value>
+			<Value Name = "Micrometer">1609350000</Value>
+			<Value Name = "Nanometer">1609350000000</Value>
+			<Value Name = "Mile">1</Value>
+			<Value Name = "Yard">1760.0065617</Value>
+			<Value Name = "Foot">5280.019685</Value>
+			<Value Name = "Inch">63360.23622</Value>
+			<Value Name = "LightYear">0.0000000000001701096963</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Yard</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.9144</Value>
+			<Value Name = "Kilometer">0.0009144</Value>
+			<Value Name = "Centimeter">91.44</Value>
+			<Value Name = "Millimeter">914.4</Value>
+			<Value Name = "Micrometer">914400</Value>
+			<Value Name = "Nanometer">914400000</Value>
+			<Value Name = "Mile">0.0005681797</Value>
+			<Value Name = "Yard">1</Value>
+			<Value Name = "Foot">3</Value>
+			<Value Name = "Inch">36</Value>
+			<Value Name = "LightYear">0.00000000000000009665287622</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Foot</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.3048</Value>
+			<Value Name = "Kilometer">0.0003048</Value>
+			<Value Name = "Centimeter">30.48</Value>
+			<Value Name = "Millimeter">304.8</Value>
+			<Value Name = "Micrometer">304800</Value>
+			<Value Name = "Nanometer">304800000</Value>
+			<Value Name = "Mile">0.0001893932</Value>
+			<Value Name = "Yard">0.3333333333</Value>
+			<Value Name = "Foot">1</Value>
+			<Value Name = "Inch">12</Value>
+			<Value Name = "LightYear">0.0000000000000000322176254</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Inch</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">0.0254</Value>
+			<Value Name = "Kilometer">0.0000254</Value>
+			<Value Name = "Centimeter">2.54</Value>
+			<Value Name = "Millimeter">25.4</Value>
+			<Value Name = "Micrometer">25400</Value>
+			<Value Name = "Nanometer">25400000</Value>
+			<Value Name = "Mile">0.0000157828</Value>
+			<Value Name = "Yard">0.0277777778</Value>
+			<Value Name = "Foot">0.0833333333</Value>
+			<Value Name = "Inch">1</Value>
+			<Value Name = "LightYear">0.000000000000000002684802117</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>LightYear</Name>
+		<Type>Length</Type>
+		<ConvertTo>
+			<Value Name = "Meter">9460660000000000</Value>
+			<Value Name = "Kilometer">9460660000000</Value>
+			<Value Name = "Centimeter">946066000000000000</Value>
+			<Value Name = "Millimeter">9460660000000000000</Value>
+			<Value Name = "Micrometer">9460660000000000000000</Value>
+			<Value Name = "Nanometer">9460660000000000000000000</Value>
+			<Value Name = "Mile">5878559666946</Value>
+			<Value Name = "Yard">10346303587051618</Value>
+			<Value Name = "Foot">31038910761154856</Value>
+			<Value Name = "Inch">372466929133858300</Value>
+			<Value Name = "LightYear">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+	
+	<!-- ================= TEMPERATURE ================== -->
+	<Unit>
+		<Name>Celsius</Name>
+		<Type>Temperature</Type>
+		<ConvertTo>
+			<Value Name = "Celsius">1</Value>
+			<Value Name = "Kelvin">274.15</Value>
+			<Value Name = "Fahrenheit">33.8</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Kelvin</Name>
+		<Type>Temperature</Type>
+		<ConvertTo>
+			<Value Name = "Celsius">-272.15</Value>
+			<Value Name = "Kelvin">1</Value>
+			<Value Name = "Fahrenheit">-457.87</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Fahrenheit</Name>
+		<Type>Temperature</Type>
+		<ConvertTo>
+			<Value Name = "Celsius">-17.222222222</Value>
+			<Value Name = "Kelvin">255.92777778</Value>
+			<Value Name = "Fahrenheit">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+	
+	<!-- ===================== TIME ===================== -->
+	<Unit>
+		<Name>Second</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">1</Value>
+			<Value Name = "Millisecond">1000</Value>
+			<Value Name = "Microsecond">1000000</Value>
+			<Value Name = "Nanosecond">1000000000</Value>
+			<Value Name = "Picosecond">1000000000000</Value>
+			<Value Name = "Minute">0.0166666667</Value>
+			<Value Name = "Hour">0.0002777778</Value>
+			<Value Name = "Day">0.0000115741</Value>
+			<Value Name = "Week">0.0000016534</Value>
+			<Value Name = "Month">0.0000003802570537</Value>
+			<Value Name = "Year">0.00000003168808781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Millisecond</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">0.001</Value>
+			<Value Name = "Millisecond">1</Value>
+			<Value Name = "Microsecond">1000</Value>
+			<Value Name = "Nanosecond">1000000</Value>
+			<Value Name = "Picosecond">1000000000</Value>
+			<Value Name = "Minute">0.0000166667</Value>
+			<Value Name = "Hour">0.0000002777777777</Value>
+			<Value Name = "Day">0.00000001157407407</Value>
+			<Value Name = "Week">0.000000001653439153</Value>
+			<Value Name = "Month">0.0000000003802570537</Value>
+			<Value Name = "Year">0.00000000003168808781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Microsecond</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">0.000001</Value>
+			<Value Name = "Millisecond">0.001</Value>
+			<Value Name = "Microsecond">1</Value>
+			<Value Name = "Nanosecond">1000</Value>
+			<Value Name = "Picosecond">1000000</Value>
+			<Value Name = "Minute">0.00000001666666666</Value>
+			<Value Name = "Hour">0.0000000002777777777</Value>
+			<Value Name = "Day">0.00000000001157407407</Value>
+			<Value Name = "Week">0.00000000001653439153</Value>
+			<Value Name = "Month">0.0000000000003802570537</Value>
+			<Value Name = "Year">0.00000000000003168808781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Nanosecond</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">0.000000001</Value>
+			<Value Name = "Millisecond">0.000001</Value>
+			<Value Name = "Microsecond">0.001</Value>
+			<Value Name = "Nanosecond">1</Value>
+			<Value Name = "Picosecond">1000</Value>
+			<Value Name = "Minute">0.00000000001666666666</Value>
+			<Value Name = "Hour">0.0000000000002777777777</Value>
+			<Value Name = "Day">0.00000000000001157407407</Value>
+			<Value Name = "Week">0.000000000000001653439153</Value>
+			<Value Name = "Month">0.0000000000000003802570537</Value>
+			<Value Name = "Year">0.00000000000000003168808781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Picosecond</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">0.000000000001</Value>
+			<Value Name = "Millisecond">0.000000001</Value>
+			<Value Name = "Microsecond">0.000001</Value>
+			<Value Name = "Nanosecond">0.001</Value>
+			<Value Name = "Picosecond">1</Value>
+			<Value Name = "Minute">0.00000000000001666666666</Value>
+			<Value Name = "Hour">0.0000000000000002777777777</Value>
+			<Value Name = "Day">0.00000000000000001157407407</Value>
+			<Value Name = "Week">0.000000000000000001653439153</Value>
+			<Value Name = "Month">0.0000000000000000003802570537</Value>
+			<Value Name = "Year">0.00000000000000000003168808781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Minute</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">60</Value>
+			<Value Name = "Millisecond">60000</Value>
+			<Value Name = "Microsecond">60000000</Value>
+			<Value Name = "Nanosecond">60000000000</Value>
+			<Value Name = "Picosecond">60000000000000</Value>
+			<Value Name = "Minute">1</Value>
+			<Value Name = "Hour">0.0166666667</Value>
+			<Value Name = "Day">0.0006944444</Value>
+			<Value Name = "Week">0.0000992063</Value>
+			<Value Name = "Month">0.0000228154</Value>
+			<Value Name = "Year">0.0000019013</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Hour</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">3600</Value>
+			<Value Name = "Millisecond">3600000</Value>
+			<Value Name = "Microsecond">3600000000</Value>
+			<Value Name = "Nanosecond">3600000000</Value>
+			<Value Name = "Picosecond">3600000000000000</Value>
+			<Value Name = "Minute">60</Value>
+			<Value Name = "Hour">1</Value>
+			<Value Name = "Day">0.0416666667</Value>
+			<Value Name = "Week">0.005952381</Value>
+			<Value Name = "Month">0.0013689254</Value>
+			<Value Name = "Year">0.0001140771</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Day</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">86400</Value>
+			<Value Name = "Millisecond">86400000</Value>
+			<Value Name = "Microsecond">86400000000</Value>
+			<Value Name = "Nanosecond">86400000000000</Value>
+			<Value Name = "Picosecond">86400000000000000</Value>
+			<Value Name = "Minute">1440</Value>
+			<Value Name = "Hour">24</Value>
+			<Value Name = "Day">1</Value>
+			<Value Name = "Week">0.1428571429</Value>
+			<Value Name = "Month">0.0328542094</Value>
+			<Value Name = "Year">0.0027378508</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Week</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">604800</Value>
+			<Value Name = "Millisecond">604800000</Value>
+			<Value Name = "Microsecond">604800000000</Value>
+			<Value Name = "Nanosecond">604800000000000</Value>
+			<Value Name = "Picosecond">604800000000000000</Value>
+			<Value Name = "Minute">10080</Value>
+			<Value Name = "Hour">168</Value>
+			<Value Name = "Day">7</Value>
+			<Value Name = "Week">1</Value>
+			<Value Name = "Month">0.2299794661</Value>
+			<Value Name = "Year">0.0191649555</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Month</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">2629800</Value>
+			<Value Name = "Millisecond">2629800000</Value>
+			<Value Name = "Microsecond">2629800000000</Value>
+			<Value Name = "Nanosecond">2629800000000000</Value>
+			<Value Name = "Picosecond">2629800000000000000</Value>
+			<Value Name = "Minute">43830</Value>
+			<Value Name = "Hour">730.5</Value>
+			<Value Name = "Day">30.4375</Value>
+			<Value Name = "Week">4.3482142857</Value>
+			<Value Name = "Month">1</Value>
+			<Value Name = "Year">0.0833333333</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Year</Name>
+		<Type>Time</Type>
+		<ConvertTo>
+			<Value Name = "Second">31557600</Value>
+			<Value Name = "Millisecond">31557600000</Value>
+			<Value Name = "Microsecond">31557600000000</Value>
+			<Value Name = "Nanosecond">31557600000000000</Value>
+			<Value Name = "Picosecond">31557600000000000000</Value>
+			<Value Name = "Minute">525960</Value>
+			<Value Name = "Hour">8766</Value>
+			<Value Name = "Day">365.25</Value>
+			<Value Name = "Week">52.178571429</Value>
+			<Value Name = "Month">12</Value>
+			<Value Name = "Year">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+
+	<!-- ==================== VOLUME ==================== -->
+	<Unit>
+		<Name>CubicMeter</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">1</Value>
+			<Value Name = "CubicKilometer">0.000000001</Value>
+			<Value Name = "CubicCentimeter">1000000</Value>
+			<Value Name = "CubicMillimeter">1000000000</Value>
+			<Value Name = "Liter">1000</Value>
+			<Value Name = "Milliliter">1000000</Value>
+			<Value Name = "CubicMile">0.0000000002399128636</Value>
+			<Value Name = "CubicYard">1.3079506193</Value>
+			<Value Name = "CubicFoot">35.314666721</Value>
+			<Value Name = "CubicInch">61023.744095</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicKilometer</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">1000000000</Value>
+			<Value Name = "CubicKilometer">1</Value>
+			<Value Name = "CubicCentimeter">1000000000000000</Value>
+			<Value Name = "CubicMillimeter">1000000000000000000</Value>
+			<Value Name = "Liter">1000000000000</Value>
+			<Value Name = "Milliliter">1000000000000000</Value>
+			<Value Name = "CubicMile">0.2399128636</Value>
+			<Value Name = "CubicYard">1307950619.3</Value>
+			<Value Name = "CubicFoot">35314666721</Value>
+			<Value Name = "CubicInch">61023744094732</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicCentimeter</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.000001</Value>
+			<Value Name = "CubicKilometer">0.000000000000001</Value>
+			<Value Name = "CubicCentimeter">1</Value>
+			<Value Name = "CubicMillimeter">1000</Value>
+			<Value Name = "Liter">0.001</Value>
+			<Value Name = "Milliliter">1</Value>
+			<Value Name = "CubicMile">0.0000000000000002399128636</Value>
+			<Value Name = "CubicYard">0.000001308</Value>
+			<Value Name = "CubicFoot">0.0000353147</Value>
+			<Value Name = "CubicInch">0.0610237441</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicMillimeter</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.000000001</Value>
+			<Value Name = "CubicKilometer">0.000000000000000001</Value>
+			<Value Name = "CubicCentimeter">0.001</Value>
+			<Value Name = "CubicMillimeter">1</Value>
+			<Value Name = "Liter">0.000001</Value>
+			<Value Name = "Milliliter">0.001</Value>
+			<Value Name = "CubicMile">0.0000000000000000002399128636</Value>
+			<Value Name = "CubicYard">0.000000001307950619</Value>
+			<Value Name = "CubicFoot">0.00000003531466672</Value>
+			<Value Name = "CubicInch">0.0000610237</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Liter</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.001</Value>
+			<Value Name = "CubicKilometer">0.000000000001</Value>
+			<Value Name = "CubicCentimeter">1000</Value>
+			<Value Name = "CubicMillimeter">1000000</Value>
+			<Value Name = "Liter">1</Value>
+			<Value Name = "Milliliter">1000</Value>
+			<Value Name = "CubicMile">0.0000000000002399128636</Value>
+			<Value Name = "CubicYard">0.0013079506</Value>
+			<Value Name = "CubicFoot">0.0353146667</Value>
+			<Value Name = "CubicInch">61.023744095</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Milliliter</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.000001</Value>
+			<Value Name = "CubicKilometer">0.000000000000001</Value>
+			<Value Name = "CubicCentimeter">1</Value>
+			<Value Name = "CubicMillimeter">1000</Value>
+			<Value Name = "Liter">0.001</Value>
+			<Value Name = "Milliliter">1</Value>
+			<Value Name = "CubicMile">0.0000000000000002399128636</Value>
+			<Value Name = "CubicYard">0.000001308</Value>
+			<Value Name = "CubicFoot">0.0000353147</Value>
+			<Value Name = "CubicInch">0.0610237441</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicMile</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">4168180000</Value>
+			<Value Name = "CubicKilometer">4.16818</Value>
+			<Value Name = "CubicCentimeter">4168180000000000</Value>
+			<Value Name = "CubicMillimeter">4168170000000000000</Value>
+			<Value Name = "Liter">4168180000000</Value>
+			<Value Name = "Milliliter">4168180000000000</Value>
+			<Value Name = "CubicMile">1</Value>
+			<Value Name = "CubicYard">5451773612.4</Value>
+			<Value Name = "CubicFoot">147197887535</Value>
+			<Value Name = "CubicInch">254357949660781</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicYard</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.764554858</Value>
+			<Value Name = "CubicKilometer">0.0000000007645548579</Value>
+			<Value Name = "CubicCentimeter">764554.85798</Value>
+			<Value Name = "CubicMillimeter">764554857.98</Value>
+			<Value Name = "Liter">764.55485798</Value>
+			<Value Name = "Milliliter">764554.85798</Value>
+			<Value Name = "CubicMile">0.0000000001834265453</Value>
+			<Value Name = "CubicYard">1</Value>
+			<Value Name = "CubicFoot">27</Value>
+			<Value Name = "CubicInch">46656</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicFoot</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.0283168466</Value>
+			<Value Name = "CubicKilometer">0.00000000002831684659</Value>
+			<Value Name = "CubicCentimeter">28316.846592</Value>
+			<Value Name = "CubicMillimeter">28316846.592</Value>
+			<Value Name = "Liter">28.316846592</Value>
+			<Value Name = "Milliliter">28316.846592</Value>
+			<Value Name = "CubicMile">0.000000000006793575755</Value>
+			<Value Name = "CubicYard">0.037037037</Value>
+			<Value Name = "CubicFoot">1</Value>
+			<Value Name = "CubicInch">1728</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>CubicInch</Name>
+		<Type>Volume</Type>
+		<ConvertTo>
+			<Value Name = "CubicMeter">0.0000163871</Value>
+			<Value Name = "CubicKilometer">0.000000000000016387064</Value>
+			<Value Name = "CubicCentimeter">16.387064</Value>
+			<Value Name = "CubicMillimeter">16387.064</Value>
+			<Value Name = "Liter">0.016387064</Value>
+			<Value Name = "Milliliter">16.387064</Value>
+			<Value Name = "CubicMile">0.000000000000003931467451</Value>
+			<Value Name = "CubicYard">0.0000214335</Value>
+			<Value Name = "CubicFoot">0.0005787037</Value>
+			<Value Name = "CubicInch">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+	
+	<!-- ==================== WEIGHT ==================== -->
+	<Unit>
+		<Name>Kilogram</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">1</Value>
+			<Value Name = "Gram">1000</Value>
+			<Value Name = "Milligram">1000000</Value>
+			<Value Name = "MetricTon">0.001</Value>
+			<Value Name = "LongTon">0.0009842073</Value>
+			<Value Name = "ShortTon">0.0011023122</Value>
+			<Value Name = "Pound">2.2046244202</Value>
+			<Value Name = "Ounce">35.273990723</Value>
+			<Value Name = "Carrat">5000</Value>
+			<Value Name = "AtomicMassUnit">602213665200000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Gram</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.001</Value>
+			<Value Name = "Gram">1</Value>
+			<Value Name = "Milligram">1000</Value>
+			<Value Name = "MetricTon">0.000001</Value>
+			<Value Name = "LongTon">0.0000009842073304</Value>
+			<Value Name = "ShortTon">0.0000011023</Value>
+			<Value Name = "Pound">0.0022046244</Value>
+			<Value Name = "Ounce">0.0352739907</Value>
+			<Value Name = "Carrat">5</Value>
+			<Value Name = "AtomicMassUnit">602213665200000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Milligram</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.000001</Value>
+			<Value Name = "Gram">0.001</Value>
+			<Value Name = "Milligram">1</Value>
+			<Value Name = "MetricTon">0.000000001</Value>
+			<Value Name = "LongTon">0.0000000009842073304</Value>
+			<Value Name = "ShortTon">0.00000000110231221</Value>
+			<Value Name = "Pound">0.0000022046</Value>
+			<Value Name = "Ounce">0.000035274</Value>
+			<Value Name = "Carrat">0.005</Value>
+			<Value Name = "AtomicMassUnit">602213665200000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>MetricTon</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">1000</Value>
+			<Value Name = "Gram">1000000</Value>
+			<Value Name = "Milligram">1000000000</Value>
+			<Value Name = "MetricTon">1</Value>
+			<Value Name = "LongTon">0.9842073304</Value>
+			<Value Name = "ShortTon">1.1023122101</Value>
+			<Value Name = "Pound">2204.6244202</Value>
+			<Value Name = "Ounce">35273.990723</Value>
+			<Value Name = "Carrat">5000000</Value>
+			<Value Name = "AtomicMassUnit">602213665200000000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>LongTon</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">1016.04608</Value>
+			<Value Name = "Gram">1016046.08</Value>
+			<Value Name = "Milligram">1016046080</Value>
+			<Value Name = "MetricTon">1.01604608</Value>
+			<Value Name = "LongTon">1</Value>
+			<Value Name = "ShortTon">1.12</Value>
+			<Value Name = "Pound">2240</Value>
+			<Value Name = "Ounce">35840</Value>
+			<Value Name = "Carrat">5080230.4</Value>
+			<Value Name = "AtomicMassUnit">611876833800000000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>ShortTon</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">907.184</Value>
+			<Value Name = "Gram">907184</Value>
+			<Value Name = "Milligram">907184000</Value>
+			<Value Name = "MetricTon">0.907184</Value>
+			<Value Name = "LongTon">0.8928571429</Value>
+			<Value Name = "ShortTon">1</Value>
+			<Value Name = "Pound">2000</Value>
+			<Value Name = "Ounce">32000</Value>
+			<Value Name = "Carrat">4535920</Value>
+			<Value Name = "AtomicMassUnit">546318601600000000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Pound</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.453592</Value>
+			<Value Name = "Gram">453.592</Value>
+			<Value Name = "Milligram">453592</Value>
+			<Value Name = "MetricTon">0.000453592</Value>
+			<Value Name = "LongTon">0.0004464286</Value>
+			<Value Name = "ShortTon">0.0005</Value>
+			<Value Name = "Pound">1</Value>
+			<Value Name = "Ounce">16</Value>
+			<Value Name = "Carrat">2267.96</Value>
+			<Value Name = "AtomicMassUnit">273159300800000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Ounce</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.0283495</Value>
+			<Value Name = "Gram">28.3495</Value>
+			<Value Name = "Milligram">28349.5</Value>
+			<Value Name = "MetricTon">0.0000283495</Value>
+			<Value Name = "LongTon">0.0000279018</Value>
+			<Value Name = "ShortTon">0.00003125</Value>
+			<Value Name = "Pound">0.0625</Value>
+			<Value Name = "Ounce">1</Value>
+			<Value Name = "Carrat">141.7475</Value>
+			<Value Name = "AtomicMassUnit">17072456300000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>Carrat</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.0002</Value>
+			<Value Name = "Gram">0.2</Value>
+			<Value Name = "Milligram">200</Value>
+			<Value Name = "MetricTon">0.0000002</Value>
+			<Value Name = "LongTon">0.000000196841466</Value>
+			<Value Name = "ShortTon">0.000000220462442</Value>
+			<Value Name = "Pound">0.0004409249</Value>
+			<Value Name = "Ounce">0.0070547981</Value>
+			<Value Name = "Carrat">1</Value>
+			<Value Name = "AtomicMassUnit">120442733000000000000000</Value>
+		</ConvertTo>
+	</Unit>
+	<Unit>
+		<Name>AtomicMassUnit</Name>
+		<Type>Weight</Type>
+		<ConvertTo>
+			<Value Name = "Kilogram">0.000000000000000000000000001660540199</Value>
+			<Value Name = "Gram">0.000000000000000000000001660540199</Value>
+			<Value Name = "Milligram">0.000000000000000000001660540199</Value>
+			<Value Name = "MetricTon">0.000000000000000000000000000001660540199</Value>
+			<Value Name = "LongTon">0.000000000000000000000000000001634315837</Value>
+			<Value Name = "ShortTon">0.000000000000000000000000000001830433737</Value>
+			<Value Name = "Pound">0.000000000000000000000000003660867475</Value>
+			<Value Name = "Ounce">0.0000000000000000000000000585738796</Value>
+			<Value Name = "Carrat">0.000000000000000000000008302700999</Value>
+			<Value Name = "AtomicMassUnit">1</Value>
+		</ConvertTo>
+	</Unit>
+	<!-- ================================================ -->
+</Units>
